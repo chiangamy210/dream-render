@@ -10,7 +10,6 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
-import PublicIcon from "@mui/icons-material/Public";
 import LogoutIcon from "@mui/icons-material/Logout";
 import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 const pages = ["Create", "Collection"];
@@ -36,7 +35,7 @@ const ResponsiveAppBar = (props) => {
       position="static"
       style={{ background: "black", top: 0, position: "fixed", zIndex: 1 }}>
       <Container maxWidth="xl">
-        <Toolbar disbleGutters>
+        <Toolbar disableGutters>
           <AutoAwesomeOutlinedIcon
             sx={{
               display: { xs: isLoggedIn ? "none" : "flex", md: "flex" },

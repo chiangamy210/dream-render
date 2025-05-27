@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import Main from "./Main";
 import ResponsiveAppBar from "./ResponsiveAppBar";
-import { TOKEN_KEY } from "../constants";
+import { TOKEN_KEY } from "../constant";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
-    // localStorage.getItem(TOKEN_KEY) ? true : false
-    true
+    localStorage.getItem(TOKEN_KEY) ? true : false
+    // true
   );
 
   const loggedIn = (token) => {
