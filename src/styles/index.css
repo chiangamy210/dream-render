@@ -3,6 +3,8 @@
 @import "./Register.css";
 @import "./Collection.css";
 @import "./SearchBar.css";
+@import "yet-another-react-lightbox/styles.css";
+@import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 axibody {
   margin: 0;
