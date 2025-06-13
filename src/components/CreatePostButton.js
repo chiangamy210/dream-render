@@ -24,15 +24,16 @@ class CreatePostButton extends Component {
 
     // get from data
 
-    this.PostForm.validateFields()
+    this.postForm
+      .validateFields()
       .then((form) => {
         const { description, uploadPost } = form;
-        const { type, oringinFileObj } = uploadPost[0];
+        const { type, originFileObj } = uploadPost[0];
         const postType = type.match(/^(image|video)/g)[0];
         if (postType) {
           let formData = new FormData();
           formData.append("message", description);
-          formData.append("media_file", oringinFileObj);
+          formData.append("media_file", originFileObj);
 
           const opt = {
             method: "POST",
